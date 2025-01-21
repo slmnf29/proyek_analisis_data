@@ -57,7 +57,7 @@ def createTotalUsers_df(df):
     return cust_freq_df
 
 #Mengekspor data hour.csv
-hour_df = pd.read_csv("https://github.com/slmnf29/proyek_analisis_data/blob/main/dashboard/hour.csv", sep=';', on_bad_lines='skip')
+hour_df = pd.read_csv("https://raw.githubusercontent.com/slmnf29/proyek_analisis_data/refs/heads/main/dashboard/hour.csv", sep=';')
 
 st.table(hour_df)
 

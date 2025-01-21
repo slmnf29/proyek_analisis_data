@@ -57,7 +57,7 @@ def createTotalUsers_df(df):
     return cust_freq_df
 
 #Mengekspor data hour.csv
-hour_df = pd.read_csv("hour.csv", delimiter=';')
+hour_df = pd.read_csv("https://raw.githubusercontent.com/slmnf29/proyek_analisis_data/refs/heads/main/dashboard/hour.csv", delimiter=';')
 
 hour_df.sort_values(by="instant", inplace=True)
 hour_df.reset_index(inplace=True)

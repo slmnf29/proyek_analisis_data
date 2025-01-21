@@ -58,9 +58,6 @@ def createTotalUsers_df(df):
 
 #Mengekspor data hour.csv
 hour_df = pd.read_csv("https://raw.githubusercontent.com/slmnf29/proyek_analisis_data/refs/heads/main/dashboard/hour.csv", sep=';')
-
-st.table(hour_df)
-
 hour_df.sort_values(by="instant", inplace=True)
 hour_df.reset_index(inplace=True)
 hour_df["dteday"] = pd.to_datetime(hour_df["dteday"])
